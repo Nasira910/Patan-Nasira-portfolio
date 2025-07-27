@@ -1,0 +1,189 @@
+/* Background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/736x/3d/cc/03/3dcc03eac13af2a69cf28ce836285fc1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+    text-align: center;
+}
+
+/* Main Title */
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 40px;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #333;
+}
+
+/* Hero Section */
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    min-height: 80vh;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    margin-right: 40px;
+}
+
+.image-box img {
+    width: 400px;
+    height: 450px;
+    border-radius: 20%;
+    border: 4px solid skyblue;
+    object-fit: cover;
+}
+
+.text-box {
+    max-width: 500px;
+}
+
+.text-box h2 {
+    font-size: 36px;
+    margin: 0;
+    color: black;
+}
+
+.text-box p {
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 1.2;
+    color: black;
+}
+
+/* Styled Content Box (Skills, Projects, Internships) */
+.content-box {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 600px;
+    max-height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.content-box h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.content-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content-box li {
+    margin: 15px 0;
+    font-size: 20px;
+    line-height: 1.2;
+    color: black;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-box {
+        margin: 0 0 20px 0;
+    }
+
+    .text-box h2 {
+        font-size: 14px;
+    }
+
+    .text-box p {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .main-title {
+        font-size: 36px;
+    }
+}
